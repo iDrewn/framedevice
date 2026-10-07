@@ -1,6 +1,6 @@
 # Framedevice
 
-Website for **Framedevice**, an iOS app for device info and screenshot mockups, made for iPhone Duo.
+Website for **Framedevice**, an iOS app for device info and screenshot and video mockups for iPhone, iPad, Apple Watch and Mac, made for iPhone Duo.
 
 Live site: https://idrewn.github.io/framedevice/
 
