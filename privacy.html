@@ -34,7 +34,8 @@
     <p>The Device tab reads information such as your model, system version, display, battery, storage, network status and available sensors, directly from your device. It is shown on screen only. It leaves your device only if you tap Share and send the report somewhere yourself, for example as a PDF.</p>
 
     <h2>Network</h2>
-    <p>Framedevice reads the type of connection you are using (for example Wi-Fi) so it can show it in the device report. It does not make network requests of its own.</p>
+    <p>Framedevice makes one kind of network request: it downloads Apple's public list of the latest iOS releases (from <code>gdmf.apple.com</code>) so the Device tab can tell you whether an update is available. The request carries no information about you or your device, because the app picks your model's entry from the list on the device itself. As with any request to a web server, Apple can see your IP address. The answer is remembered for a few hours so the list is not downloaded again each time.</p>
+    <p>The app also reads the type of connection you are using (for example Wi-Fi) so it can show it in the device report. This is read from the system and is not sent anywhere.</p>
 
     <h2>TestFlight and Apple</h2>
     <p>If you install a beta through TestFlight, Apple may collect usage and crash information under Apple's own privacy policy. The developer sees only what Apple chooses to share through TestFlight, such as tester feedback you send.</p>
